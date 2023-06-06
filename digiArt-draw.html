@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Draw</title>
+        <link rel="shortcut icon" type="image/icon" href="imagenes/favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/estiloDigiArt-draw.css">
+        <script src="fabric.min.js"></script>
+    </head>
+    <body>
+        <div id="menu" class="menu">
+            <div id="explorador_de_documentos" class="explorador_de_documentos">
+                <!--Contiene los archivos, -->
+                <ul class="nav">
+                    <li id="archivos"><a href="">Archivo</a>
+                        <ul>
+                            <li id="abrir-new-draw"><a href="">Abrir nuevo dibujo</a></li>
+                            <li id="abrir-draw"><a>Abrir dibujo</a></li>
+                            <li id="Guardar-dibujo"><a>Guardar dibujo</a></li>
+                            <li id="descargar-img"><a>Descargar</a></li>
+                        </ul>
+                    </li>
+                    <li id="ver"><a href="">Ver</a>
+                        <ul>
+                            <li><a>Ver comandos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="elemtIzq" class="elemtIzq">
+            <div id="paletaColores" class="paletaColores">
+                <input type="color" id="color1"/>
+                <input type="color" id="color2"/>
+            </div>
+    
+            <div id="barraHerramientas" class="barraHerramientas">
+                <!--Contiene los iconos de las principales funcionalidades-->
+                <!--Pincel-->
+                <button id="pincel"><img src="imagenes/pincel.png" height="30px"/></button>
+                <!--Borrador-->
+                <button id="borrador"><img src="imagenes/borrador.png" height="30px"/></button>
+                <!--Lineas-->
+                <button id="lineas"><img src="imagenes/Lineas.png" height="30px"/></button>
+                <!--Mover-->
+                <button id="mover"><img src="imagenes/Mover.png" height="30px"/></button>
+                <!--Cubo-->
+                <button id="balde"><img src="imagenes/Relleno.png" height="30px"/></button>
+                <!--Seleccionar-->
+                <button id="seleccion"><img src="imagenes/Seleccionar.png" height="30px"/></button>
+            </div>
+    
+            <div id="barraPropiedades" class="barraPropiedades">
+                <!--Contiene las variaciones de las funcionalidades-->
+                <!--Otros pinceles-->
+                <!--Otras tipos de lineas y figuras-->
+                <!--Otro tipo de seleccion -->
+            </div>
+        </div>
+
+        <div id="elemtDer" class="elemtDer">
+            <div id="cajaHerramienta" class="cajaHerramienta">
+                <!--Contiene el boton de retroceder y adelantar-->
+                <button>Retroceder</button>
+                <button>Adelantar</button>
+            </div>
+    
+            <div id="barraTitulo" class="barraTitulo">
+                <!--Contiene el titulo del dibujo-->
+                
+            </div>
+    
+                <div id="ventDibujo" class="ventDibujo">
+                    <canvas id="myCanvas" height="540px" width="1050px"></canvas>
+                </div>
+        </div>
+
+        <div id="barraEstado" class="barraEstado">
+
+        </div>
+
+        
+
+        <script src="js/codigoDigiArt.js"></script>
+    </body>
+</html>
